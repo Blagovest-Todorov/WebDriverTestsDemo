@@ -11,7 +11,7 @@ driver.Url = "https://wikipedia.org";
 Console.WriteLine("CURRENT TITLE: " + driver.Title);
 
 // locate search field by Id
-var searchField = driver.FindElement(By.Id("searchInput"));
+IWebElement searchField = driver.FindElement(By.Id("searchInput"));
 
 // click on element
 searchField.Click();
