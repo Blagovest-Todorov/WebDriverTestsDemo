@@ -13,7 +13,7 @@ namespace NunitWebDriverTests
         {
             // create new object of type ChtomeOptios
             var options = new ChromeOptions();
-            //options.AddArgument("--headless");
+            options.AddArguments("--headless", "--window-size=1920,1200");
 
             this.driver = new ChromeDriver(options);
 
